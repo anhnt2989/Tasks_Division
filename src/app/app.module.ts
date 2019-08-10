@@ -8,10 +8,10 @@ import { GroupMessengerComponent } from './component/group-messenger/group-messe
 import { AboutUsComponent } from './component/about-us/about-us.component';
 import { ProjectManagerComponent } from './component/project-manager/project-manager.component';
 import { TaskManagerComponent } from './component/task-manager/task-manager.component';
-import { UserLoginComponent } from './component/user-login/user-login.component';
 import { UserRegisterComponent } from './component/user-register/user-register.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,14 +21,14 @@ import {MDBBootstrapModule} from 'angular-bootstrap-md';
     AboutUsComponent,
     ProjectManagerComponent,
     TaskManagerComponent,
-    UserLoginComponent,
-    UserRegisterComponent
+    UserRegisterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     MDBBootstrapModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

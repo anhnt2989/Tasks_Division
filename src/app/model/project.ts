@@ -1,6 +1,8 @@
+import {Task} from './task';
+
 export interface Project {
-  taskId: number;
-  userId: number;
+  tasks: Task[];
   status: boolean;
-  deadline: Date;
+  title: string;
+  content: string;
 }

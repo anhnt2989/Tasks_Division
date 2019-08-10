@@ -1,6 +1,9 @@
+import {Project} from './project';
+
 export interface Task {
+  id: number;
   title: string;
   status: boolean;
-  deadline: Date;
-  description: string;
+  content: string;
+  // project: Project;
 }
